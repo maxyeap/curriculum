@@ -50,6 +50,8 @@ So if we look at the last commit we made *Uh-Oh!*, if you type in `git status` a
   $ git commit --amend
 ~~~
 
+Note: If you are prompted to edit the commit in your terminal instead of Visual Studio Code after typing the command, please go to the [Changing the Git Commit Message Editor](https://www.theodinproject.com/lessons/foundations-git-basics#changing-the-git-commit-message-editor) section of the [Git Basics](https://www.theodinproject.com/lessons/foundations-git-basics#changing-the-git-commit-message-editor) lesson and follow the instructions there to continue with the remaining lesson.
+
 What happened here is we first updated the staging area to include the missing file, and then we replaced the last commit with our new one to include the missing file. If we wanted to, we could have changed the message of the commit and it would have overwritten the message of the past commit.
 
 Remember to **only amend commits that have not been pushed anywhere!** The reason for this  is that `git commit --amend` does not simply edit the last commit, it *replaces that commit with an entirely new one*. This means that you could potentially destroy a commit other developers are basing their work on. When rewriting history always make sure that you're doing so in a safe manner, and that your coworkers are aware of what you're doing.
